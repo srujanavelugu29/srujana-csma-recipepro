@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-
+const dns = require("dns");
+dns.setServer(["8.8.8.8","8.8.8.4.4"])
 const connectDB = require("./config/db");
 const recipeRoutes = require("./routes/recipeRoutes");
 
